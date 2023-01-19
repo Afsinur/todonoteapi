@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/api", cors(), API_Routes);
 //dbURI
-const dbURI = `mongodb+srv://a_01794642816:a_01794642816@afsinurcluster1.e2eue.mongodb.net/?retryWrites=true&w=majority/noteusers`;
+const dbURI = `mongodb+srv://a_01794642816:a_01794642816@afsinurcluster1.e2eue.mongodb.net/noteusers?retryWrites=true&w=majority`;
 const dbURIoptions = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
