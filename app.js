@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.port || `1000`;
+const port = process.env.PORT || `1000`;
 const listen = () => {
   console.log(`listening on port: ${port}`);
 };
