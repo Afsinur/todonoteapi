@@ -37,7 +37,7 @@ api.post_signup = async (req, res) => {
     const user = await NoteUser.create(req.body);
 
     if (user) {
-      res.json({ done: 1 });
+      res.send({ done: 1 });
     }
   } catch (error) {
     handleErrors(error, res);
@@ -50,7 +50,7 @@ api.post_login = async (req, res) => {
   try {
     const user = await NoteUser.login(email, password);
     if (user) {
-      res.json({ done: 1 });
+      res.send({ done: 1 });
     }
   } catch (error) {
     handleErrors(error, res);
